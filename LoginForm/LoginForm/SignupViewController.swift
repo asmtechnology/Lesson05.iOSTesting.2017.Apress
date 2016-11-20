@@ -1,5 +1,5 @@
 //
-//  CreateAccountViewController.swift
+//  SignupViewController.swift
 //  LoginForm
 //
 //  Created by Abhishek Mishra on 10/11/2016.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreateAccountViewController: UIViewController {
+class SignupViewController: UIViewController {
 
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -64,7 +64,7 @@ class CreateAccountViewController: UIViewController {
 
 }
 
-extension CreateAccountViewController: UITextFieldDelegate {
+extension SignupViewController: UITextFieldDelegate {
     
     func textField(_ textField: UITextField,
                    shouldChangeCharactersIn range: NSRange,

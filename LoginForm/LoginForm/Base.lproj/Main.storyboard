@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
-        <!--Create Account View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="UuI-Y1-M1F">
             <objects>
-                <viewController id="prD-6T-d7y" customClass="CreateAccountViewController" customModule="LoginForm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="prD-6T-d7y" customClass="SignupViewController" customModule="LoginForm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="73N-Fh-Sew"/>
                         <viewControllerLayoutGuide type="bottom" id="t08-ji-ydI"/>
