@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4C3728D2D0CC8E30D4F1DD9F44FCB436236C9F89",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AF86789B3D79B318542C3F3A1560D252BAE3BCF4" : 9223372036854775807,
+    "4C3728D2D0CC8E30D4F1DD9F44FCB436236C9F89" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A93B6EFD-2663-44AC-A759-49A0E0AB984D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AF86789B3D79B318542C3F3A1560D252BAE3BCF4" : "",
+    "4C3728D2D0CC8E30D4F1DD9F44FCB436236C9F89" : "LoginForm\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LoginForm",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LoginForm\/LoginForm.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/asmtechnology\/Lesson05.iOSTesting.2017.Apress.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4C3728D2D0CC8E30D4F1DD9F44FCB436236C9F89"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/asmtechnology\/Lesson03.iOSTesting.2017.Apress.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AF86789B3D79B318542C3F3A1560D252BAE3BCF4"
+    }
+  ]
+}
