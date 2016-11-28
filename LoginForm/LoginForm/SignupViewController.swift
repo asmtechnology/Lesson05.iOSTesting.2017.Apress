@@ -75,3 +75,34 @@ extension SignupViewController: UITextFieldDelegate {
     
 }
 
+extension SignupViewController : SignupViewControllerProtocol {
+    
+    func clearUserNameField() {
+        self.userNameTextField.text = ""
+    }
+    
+    func clearPasswordField() {
+        self.passwordTextField.text = ""
+    }
+    
+    func clearConfirmPasswordField() {
+        self.confirmPasswordTextField.text = ""
+    }
+    
+    
+    func enableCancelButton(_ status:Bool) {
+        self.cancelButton.isEnabled = status
+    }
+    
+    func enableCreateButton(_ status:Bool) {
+        self.createButton.isEnabled = status
+    }
+    
+    func hideKeyboard() {
+        self.userNameTextField.resignFirstResponder()
+        self.passwordTextField.resignFirstResponder()
+        self.confirmPasswordTextField.resignFirstResponder()
+    }
+}
+
+
