@@ -27,6 +27,9 @@
 		919F68591DDEFE6800C28EC8 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919F68571DDEFE6800C28EC8 /* SignupModel.swift */; };
 		91B095B21DD7263A002E3A5B /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B095B11DD7263A002E3A5B /* LoginModel.swift */; };
 		91B095B31DD7263A002E3A5B /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B095B11DD7263A002E3A5B /* LoginModel.swift */; };
+		91B58B781DEC82F5006D641F /* MockLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A33EFD1DEB6F7900CF7522 /* MockLoginController.swift */; };
+		91B58B791DEC8334006D641F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A33EFA1DEB69C000CF7522 /* LoginController.swift */; };
+		91B58B7A1DEC8334006D641F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A33EFA1DEB69C000CF7522 /* LoginController.swift */; };
 		91CD76551DDCD1A9005C545D /* UserNameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD76541DDCD1A9005C545D /* UserNameValidatorTests.swift */; };
 		91CD76571DDCD1B7005C545D /* PasswordValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD76561DDCD1B7005C545D /* PasswordValidatorTests.swift */; };
 		91CD76591DDCD1CD005C545D /* UserNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD76581DDCD1CD005C545D /* UserNameValidator.swift */; };
@@ -69,6 +72,8 @@
 		919A0ED91DE2243A00D07239 /* LoginViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerProtocol.swift; sourceTree = "<group>"; };
 		919A0EDC1DE2256D00D07239 /* MockLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLoginViewController.swift; sourceTree = "<group>"; };
 		919F68571DDEFE6800C28EC8 /* SignupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
+		91A33EFA1DEB69C000CF7522 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		91A33EFD1DEB6F7900CF7522 /* MockLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLoginController.swift; sourceTree = "<group>"; };
 		91B095B11DD7263A002E3A5B /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		91CD76541DDCD1A9005C545D /* UserNameValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNameValidatorTests.swift; sourceTree = "<group>"; };
 		91CD76561DDCD1B7005C545D /* PasswordValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidatorTests.swift; sourceTree = "<group>"; };
@@ -120,6 +125,7 @@
 		91804EF81DD4581600A4112A /* LoginForm */ = {
 			isa = PBXGroup;
 			children = (
+				91A33EF91DEB69A800CF7522 /* Controllers */,
 				91804F1C1DD4E5EA00A4112A /* Protocols */,
 				91804F1B1DD4E5E400A4112A /* ViewModel */,
 				91804F1A1DD4E5DE00A4112A /* Model */,
@@ -185,6 +191,14 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		91A33EF91DEB69A800CF7522 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				91A33EFA1DEB69C000CF7522 /* LoginController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		91CD765E1DDCD1E0005C545D /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +206,7 @@
 				91CD76611DDCD222005C545D /* MockPasswordValidator.swift */,
 				91FE1C531DDF30F900F848E1 /* MockEmailAddressValidator.swift */,
 				919A0EDC1DE2256D00D07239 /* MockLoginViewController.swift */,
+				91A33EFD1DEB6F7900CF7522 /* MockLoginController.swift */,
 			);
 			name = Mocks;
 			sourceTree = "<group>";
@@ -299,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B58B791DEC8334006D641F /* LoginController.swift in Sources */,
 				919F68581DDEFE6800C28EC8 /* SignupModel.swift in Sources */,
 				91804F211DD4E61800A4112A /* SignupViewController.swift in Sources */,
 				91FE1C501DDF283E00F848E1 /* EmailAddressValidator.swift in Sources */,
@@ -319,6 +335,7 @@
 				919A0EDB1DE2243A00D07239 /* LoginViewControllerProtocol.swift in Sources */,
 				91CD76601DDCD1FE005C545D /* MockUserNameValidator.swift in Sources */,
 				919A0EDD1DE2256D00D07239 /* MockLoginViewController.swift in Sources */,
+				91B58B781DEC82F5006D641F /* MockLoginController.swift in Sources */,
 				919F68591DDEFE6800C28EC8 /* SignupModel.swift in Sources */,
 				91CD765A1DDCD1CD005C545D /* UserNameValidator.swift in Sources */,
 				91CD76551DDCD1A9005C545D /* UserNameValidatorTests.swift in Sources */,
@@ -328,6 +345,7 @@
 				91804F221DD4E61800A4112A /* SignupViewController.swift in Sources */,
 				91FE1C561DDF724C00F848E1 /* EmailAddressValidatorTests.swift in Sources */,
 				910DCFEC1DD64ADC00E691C0 /* LoginModelTests.swift in Sources */,
+				91B58B7A1DEC8334006D641F /* LoginController.swift in Sources */,
 				919A0ED81DE2212C00D07239 /* LoginViewModel.swift in Sources */,
 				91804F1F1DD4E60800A4112A /* LoginViewController.swift in Sources */,
 				91CD76621DDCD222005C545D /* MockPasswordValidator.swift in Sources */,
