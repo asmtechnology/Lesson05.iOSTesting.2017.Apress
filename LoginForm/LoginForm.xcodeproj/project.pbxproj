@@ -11,6 +11,8 @@
 		91182A281DECC20100F6DB7C /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91182A271DECC20100F6DB7C /* LoginViewControllerTests.swift */; };
 		91182A2A1DECC2C200F6DB7C /* MockLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91182A291DECC2C200F6DB7C /* MockLoginViewModel.swift */; };
 		91182A2D1DEDB95C00F6DB7C /* UITextFieldStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91182A2C1DEDB95C00F6DB7C /* UITextFieldStub.swift */; };
+		912A1FF61E03398A0046892E /* SignupViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A1FF51E03398A0046892E /* SignupViewControllerTests.swift */; };
+		912A1FF81E0339EA0046892E /* MockSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A1FF71E0339EA0046892E /* MockSignupViewModel.swift */; };
 		91804EFA1DD4581600A4112A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91804EF91DD4581600A4112A /* AppDelegate.swift */; };
 		91804EFF1DD4581600A4112A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91804EFD1DD4581600A4112A /* Main.storyboard */; };
 		91804F011DD4581600A4112A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91804F001DD4581600A4112A /* Assets.xcassets */; };
@@ -71,6 +73,8 @@
 		91182A271DECC20100F6DB7C /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		91182A291DECC2C200F6DB7C /* MockLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLoginViewModel.swift; sourceTree = "<group>"; };
 		91182A2C1DEDB95C00F6DB7C /* UITextFieldStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldStub.swift; sourceTree = "<group>"; };
+		912A1FF51E03398A0046892E /* SignupViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewControllerTests.swift; sourceTree = "<group>"; };
+		912A1FF71E0339EA0046892E /* MockSignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSignupViewModel.swift; sourceTree = "<group>"; };
 		91804EF61DD4581600A4112A /* LoginForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91804EF91DD4581600A4112A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91804EFE1DD4581600A4112A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				919A0ED31DE21F9D00D07239 /* LoginViewModelTests.swift */,
 				91B58B831DECA58C006D641F /* SignupViewModelTests.swift */,
 				91182A271DECC20100F6DB7C /* LoginViewControllerTests.swift */,
+				912A1FF51E03398A0046892E /* SignupViewControllerTests.swift */,
 			);
 			path = LoginFormTests;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				91B58B881DECAEFA006D641F /* MockSignupViewController.swift */,
 				91B58B811DECA35A006D641F /* MockSignupController.swift */,
 				91182A291DECC2C200F6DB7C /* MockLoginViewModel.swift */,
+				912A1FF71E0339EA0046892E /* MockSignupViewModel.swift */,
 			);
 			name = Mocks;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				912A1FF81E0339EA0046892E /* MockSignupViewModel.swift in Sources */,
 				919A0EDB1DE2243A00D07239 /* LoginViewControllerProtocol.swift in Sources */,
 				91B58B821DECA35A006D641F /* MockSignupController.swift in Sources */,
 				91B58B871DECA633006D641F /* SignupViewControllerProtocol.swift in Sources */,
@@ -399,6 +406,7 @@
 				91CD76621DDCD222005C545D /* MockPasswordValidator.swift in Sources */,
 				919A0ED51DE21F9D00D07239 /* LoginViewModelTests.swift in Sources */,
 				91B58B891DECAEFA006D641F /* MockSignupViewController.swift in Sources */,
+				912A1FF61E03398A0046892E /* SignupViewControllerTests.swift in Sources */,
 				91182A281DECC20100F6DB7C /* LoginViewControllerTests.swift in Sources */,
 				91CD765D1DDCD1DB005C545D /* PasswordValidator.swift in Sources */,
 				91804F0F1DD4581600A4112A /* LoginFormTests.swift in Sources */,

@@ -17,6 +17,8 @@ class SignupViewModel: NSObject {
     var emailAddressValidator:EmailAddressValidator?
     
     var userNameValidated:Bool
+    var emailAddressValidated:Bool
+    
     var password1Validated:Bool
     var password2Validated:Bool
     
@@ -28,6 +30,8 @@ class SignupViewModel: NSObject {
     
     init(view:SignupViewControllerProtocol) {
         self.userNameValidated = false
+        self.emailAddressValidated = false
+        
         self.password1Validated = false
         self.password2Validated = false
         self.passwordsAreIdentical = false
@@ -57,6 +61,10 @@ class SignupViewModel: NSObject {
         view?.hideKeyboard()
     }
     
+    func emailAddressDidEndOnExit() {
+        view?.hideKeyboard()
+    }
+    
     func userNameUpdated(_ value:String?) {
         
         guard let value = value else {
@@ -74,7 +82,37 @@ class SignupViewModel: NSObject {
         
         if password1Validated == true &&
             password2Validated == true &&
-            passwordsAreIdentical == true {
+            passwordsAreIdentical == true &&
+            emailAddressValidated == true {
+            
+            view?.enableCreateButton(true)
+            return
+        }
+        
+        view?.enableCreateButton(false)
+    }
+    
+    
+    func emailAddressUpdated(_ value:String?) {
+        
+        guard let value = value else {
+            view?.enableCreateButton(false)
+            return
+        }
+        
+        let validator = self.emailAddressValidator ?? EmailAddressValidator()
+        emailAddressValidated = validator.validate(value)
+        
+        if emailAddressValidated == false {
+            view?.enableCreateButton(false)
+            return
+        }
+        
+        if password1Validated == true &&
+            password2Validated == true &&
+            passwordsAreIdentical == true &&
+            userNameValidated == true &&
+            emailAddressValidated == true {
             
             view?.enableCreateButton(true)
             return
@@ -109,7 +147,9 @@ class SignupViewModel: NSObject {
         
         if password1Validated == true &&
             password2Validated == true &&
-            passwordsAreIdentical == true {
+            passwordsAreIdentical == true &&
+            userNameValidated == true &&
+            emailAddressValidated == true {
             
             view?.enableCreateButton(true)
             return
@@ -143,7 +183,9 @@ class SignupViewModel: NSObject {
         
         if password1Validated == true &&
             password2Validated == true &&
-            passwordsAreIdentical == true {
+            passwordsAreIdentical == true &&
+            userNameValidated == true &&
+            emailAddressValidated == true {
             
             view?.enableCreateButton(true)
             return

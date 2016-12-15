@@ -17,10 +17,16 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var createButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     
+    var viewModel:SignupViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if self.viewModel == nil {
+            self.viewModel = SignupViewModel(view: self)
+        }
+        
+        self.viewModel?.performInitialViewSetup()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,27 +35,27 @@ class SignupViewController: UIViewController {
     }
     
     @IBAction func create(_ sender: Any) {
-        
+        viewModel?.signup(userName: userNameTextField.text, password: passwordTextField.text, emailAddress: emailAddressTextField.text)
     }
     
     @IBAction func cancel(_ sender: Any) {
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func userNameDidEndOnExit(_ sender: Any) {
-        
+        viewModel?.userNameDidEndOnExit()
     }
     
     @IBAction func passwordDidEndOnExit(_ sender: Any) {
-        
+        viewModel?.passwordDidEndOnExit()
     }
 
     @IBAction func confirmPasswordDidEndOnExit(_ sender: Any) {
-        
+        viewModel?.confirmPasswordDidEndOnExit()
     }
     
     @IBAction func emailAddressDidEndOnExit(_ sender: Any) {
-        
+        viewModel?.emailAddressDidEndOnExit()
     }
     
     /*
@@ -64,11 +70,28 @@ class SignupViewController: UIViewController {
 
 }
 
+
 extension SignupViewController: UITextFieldDelegate {
     
     func textField(_ textField: UITextField,
                    shouldChangeCharactersIn range: NSRange,
                    replacementString string: String) -> Bool {
+        
+        if textField == self.userNameTextField {
+            self.viewModel?.userNameUpdated(textField.text)
+        }
+        
+        if textField == self.passwordTextField {
+            self.viewModel?.passwordUpdated(textField.text)
+        }
+        
+        if textField == self.confirmPasswordTextField {
+            self.viewModel?.confirmPasswordUpdated(textField.text)
+        }
+        
+        if textField == self.emailAddressTextField {
+            self.viewModel?.emailAddressUpdated(textField.text)
+        }
         
         return true
     }
